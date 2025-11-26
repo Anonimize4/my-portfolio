@@ -8,15 +8,19 @@ import Certificates from './pages/certificates'
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-50">
       <Header />
-      <main>
-        <Home />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Certificates />
+      <main className="pt-20">
+        <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+              Welcome to My Portfolio
+            </h1>
+            <p className="text-xl text-white/90 mb-8">
+              A clean, professional portfolio template ready for your customization
+            </p>
+          </div>
+        </section>
       </main>
     </div>
   )
