@@ -1,6 +1,5 @@
 
-@import "tailwindcss/preflight";
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Add custom animations if needed */
 @keyframes blob {
@@ -64,7 +63,7 @@ body {
 
 /* Ensure proper background for the entire app */
 body {
-  background: #ffffff;
+  background: linear-gradient(to bottom right, #9333ea, #ec4899, #ea580c);
 }
 
 /* Fade in animations */
