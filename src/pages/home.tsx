@@ -9,35 +9,42 @@ const Home = () => {
       <main className="pt-20">
         {/* Hero Section */}
         <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 relative overflow-hidden">
+          {/* Animated background elements */}
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute w-96 h-96 bg-white/10 rounded-full blur-3xl animate-blob top-10 left-10"></div>
+            <div className="absolute w-96 h-96 bg-white/10 rounded-full blur-3xl animate-blob animation-delay-2000 top-1/2 right-10"></div>
+            <div className="absolute w-96 h-96 bg-white/10 rounded-full blur-3xl animate-blob animation-delay-4000 bottom-10 left-1/2"></div>
+          </div>
+          
           <div className="container mx-auto px-4 text-center relative z-10">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up">
                 Hi, I'm <br/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-300 drop-shadow-lg">
                   Your Name
                 </span>
               </h1>
               
-              <div className="mb-8">
+              <div className="mb-8 animate-fade-in-up animation-delay-200">
                 <p className="text-xl md:text-2xl text-white/90 font-medium mb-4">
                   Your Title | Your Expertise | Your Passion
                 </p>
               </div>
               
-              <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto backdrop-blur-sm bg-white/10 rounded-lg p-6">
+              <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto backdrop-blur-sm bg-white/10 rounded-xl p-6 border border-white/20 animate-fade-in-up animation-delay-400">
                 Add your personal introduction here. Describe your passion, expertise, and what makes you unique in your field.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
                 <a 
                   href="#projects" 
-                  className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-semibold"
+                  className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-semibold hover:shadow-purple-500/25"
                 >
                   🎨 View My Work
                 </a>
                 <a 
                   href="#contact" 
-                  className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white rounded-full hover:bg-white/30 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl border-2 border-white/30 font-semibold"
+                  className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white rounded-full hover:bg-white/30 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl border-2 border-white/30 font-semibold hover:shadow-white/25"
                 >
                   ✉️ Get In Touch
                 </a>
@@ -233,21 +240,21 @@ const Home = () => {
                       <input
                         type="text"
                         placeholder="Your Name"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                       />
                       <input
                         type="email"
                         placeholder="Your Email"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                       />
                       <textarea
                         placeholder="Your Message"
                         rows={4}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
                       ></textarea>
                       <button
                         type="submit"
-                        className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                        className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl font-semibold"
                       >
                         Send Message
                       </button>
