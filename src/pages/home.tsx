@@ -3,7 +3,7 @@ import Footer from '../components/footer'
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400">
+    <div className="min-h-screen">
       <Header />
       
       <main className="pt-20">
@@ -21,18 +21,18 @@ const Home = () => {
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up">
                 Hi, I'm <br/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-300 drop-shadow-lg">
-                  Your Name
+                  John Doe
                 </span>
               </h1>
               
               <div className="mb-8 animate-fade-in-up animation-delay-200">
                 <p className="text-xl md:text-2xl text-white/90 font-medium mb-4">
-                  Your Title | Your Expertise | Your Passion
+                  Full Stack Developer | UI/UX Designer | Problem Solver
                 </p>
               </div>
               
               <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto backdrop-blur-sm bg-white/10 rounded-xl p-6 border border-white/20 animate-fade-in-up animation-delay-400">
-                Add your personal introduction here. Describe your passion, expertise, and what makes you unique in your field.
+                Passionate developer with 5+ years of experience building scalable web applications. I specialize in React, Node.js, and creating intuitive user experiences that solve real-world problems.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
@@ -54,7 +54,7 @@ const Home = () => {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50 relative">
+        <section id="about" className="py-20 bg-gradient-to-br from-darkblue via-blue-900 to-indigo-900 relative">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
@@ -66,17 +66,17 @@ const Home = () => {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="relative">
                   <div className="rounded-2xl shadow-2xl w-full max-w-md mx-auto border-4 border-white/50 backdrop-blur-sm bg-gray-200 h-96 flex items-center justify-center">
-                    <span className="text-gray-500 text-lg">Your Photo</span>
+                    <span className="text-gray-500 text-lg">Professional Photo</span>
                   </div>
                 </div>
                 <div className="space-y-6">
                   <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/50">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-4">👋 About Yourself</h3>
+                    <h3 className="text-2xl font-bold text-gray-800 mb-4">👋 My Journey</h3>
                     <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                      Write your professional background and story here. Share your journey, experience, and what drives you.
+                      I'm a passionate full-stack developer with over 5 years of experience crafting digital solutions. My journey began with a curiosity about how things work on the web, which evolved into a career focused on building scalable, user-centric applications.
                     </p>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      Add more details about your expertise, passions, and what you bring to table. Make it personal and engaging.
+                      I specialize in React ecosystems, Node.js backends, and modern cloud architectures. What drives me is solving complex problems and creating seamless experiences that make a real difference in users' lives.
                     </p>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const Home = () => {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-20 bg-gradient-to-br from-cyan-50 via-blue-50 to-indigo-100 relative">
+        <section id="skills" className="py-20 bg-gradient-to-br from-slate-900 via-darkblue to-blue-900 relative">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
@@ -101,7 +101,7 @@ const Home = () => {
                     Frontend Skills
                   </h3>
                   <ul className="space-y-3">
-                    {['Your Frontend Skill 1', 'Your Frontend Skill 2', 'Your Frontend Skill 3'].map((skill, index) => (
+                    {['React.js', 'TypeScript', 'Tailwind CSS'].map((skill, index) => (
                       <li key={index} className="flex items-center space-x-3 text-gray-700 group-hover:text-gray-900 transition-colors">
                         <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full"></div>
                         <span className="font-medium">{skill}</span>
@@ -115,7 +115,7 @@ const Home = () => {
                     Backend Skills
                   </h3>
                   <ul className="space-y-3">
-                    {['Your Backend Skill 1', 'Your Backend Skill 2', 'Your Backend Skill 3'].map((skill, index) => (
+                    {['Node.js', 'Express', 'MongoDB'].map((skill, index) => (
                       <li key={index} className="flex items-center space-x-3 text-gray-700 group-hover:text-gray-900 transition-colors">
                         <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full"></div>
                         <span className="font-medium">{skill}</span>
@@ -129,7 +129,7 @@ const Home = () => {
                     Tools & DevOps
                   </h3>
                   <ul className="space-y-3">
-                    {['Your Tool 1', 'Your Tool 2', 'Your Tool 3'].map((skill, index) => (
+                    {['Git', 'Docker', 'AWS'].map((skill, index) => (
                       <li key={index} className="flex items-center space-x-3 text-gray-700 group-hover:text-gray-900 transition-colors">
                         <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full"></div>
                         <span className="font-medium">{skill}</span>
@@ -143,7 +143,7 @@ const Home = () => {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-slate-100 relative">
+        <section id="projects" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-darkblue relative">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
@@ -156,14 +156,14 @@ const Home = () => {
                 <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50">
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600 mb-3">
-                      Your Project 1
+                      E-Commerce Platform
                     </h3>
                     <p className="text-gray-600 mb-4 leading-relaxed">
-                      Describe your first project here and what technologies you used.
+                      Full-stack e-commerce solution with real-time inventory management, payment processing, and responsive design.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="px-3 py-1 bg-gradient-to-r from-violet-100 to-purple-100 text-violet-700 rounded-full text-sm font-medium">Tech 1</span>
-                      <span className="px-3 py-1 bg-gradient-to-r from-violet-100 to-purple-100 text-violet-700 rounded-full text-sm font-medium">Tech 2</span>
+                      <span className="px-3 py-1 bg-gradient-to-r from-violet-100 to-purple-100 text-violet-700 rounded-full text-sm font-medium">React</span>
+                      <span className="px-3 py-1 bg-gradient-to-r from-violet-100 to-purple-100 text-violet-700 rounded-full text-sm font-medium">Stripe</span>
                     </div>
                   </div>
                 </div>
@@ -171,14 +171,14 @@ const Home = () => {
                 <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50">
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600 mb-3">
-                      Your Project 2
+                      Task Management App
                     </h3>
                     <p className="text-gray-600 mb-4 leading-relaxed">
-                      Describe your second project here and what technologies you used.
+                      Collaborative project management tool with real-time updates, drag-and-drop interface, and team analytics.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="px-3 py-1 bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-700 rounded-full text-sm font-medium">Tech 1</span>
-                      <span className="px-3 py-1 bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-700 rounded-full text-sm font-medium">Tech 2</span>
+                      <span className="px-3 py-1 bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-700 rounded-full text-sm font-medium">Vue.js</span>
+                      <span className="px-3 py-1 bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-700 rounded-full text-sm font-medium">Firebase</span>
                     </div>
                   </div>
                 </div>
@@ -186,14 +186,14 @@ const Home = () => {
                 <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50">
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600 mb-3">
-                      Your Project 3
+                      AI Chat Assistant
                     </h3>
                     <p className="text-gray-600 mb-4 leading-relaxed">
-                      Describe your third project here and what technologies you used.
+                      Intelligent chatbot with natural language processing, context awareness, and multi-language support.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="px-3 py-1 bg-gradient-to-r from-amber-100 to-orange-100 text-amber-700 rounded-full text-sm font-medium">Tech 1</span>
-                      <span className="px-3 py-1 bg-gradient-to-r from-amber-100 to-orange-100 text-amber-700 rounded-full text-sm font-medium">Tech 2</span>
+                      <span className="px-3 py-1 bg-gradient-to-r from-amber-100 to-orange-100 text-amber-700 rounded-full text-sm font-medium">Python</span>
+                      <span className="px-3 py-1 bg-gradient-to-r from-amber-100 to-orange-100 text-amber-700 rounded-full text-sm font-medium">OpenAI</span>
                     </div>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ const Home = () => {
         </section>
 
         {/* Certificates Section */}
-        <section id="certificates" className="py-20 bg-gradient-to-br from-teal-50 via-cyan-50 to-blue-100 relative">
+        <section id="certificates" className="py-20 bg-gradient-to-br from-blue-900 via-darkblue to-slate-900 relative">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
@@ -221,10 +221,10 @@ const Home = () => {
                       </svg>
                     </div>
                     <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600 mb-2">
-                      Your Certificate 1
+                      AWS Certified Developer
                     </h3>
-                    <p className="text-gray-600 mb-2">Issuing Organization</p>
-                    <p className="text-sm text-gray-500">Issued: Month Year</p>
+                    <p className="text-gray-600 mb-2">Amazon Web Services</p>
+                    <p className="text-sm text-gray-500">Issued: March 2024</p>
                   </div>
                 </div>
 
@@ -235,101 +235,4 @@ const Home = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600 mb-2">
-                      Your Certificate 2
-                    </h3>
-                    <p className="text-gray-600 mb-2">Issuing Organization</p>
-                    <p className="text-sm text-gray-500">Issued: Month Year</p>
-                  </div>
-                </div>
-
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/50">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600 mb-2">
-                      Your Certificate 3
-                    </h3>
-                    <p className="text-gray-600 mb-2">Issuing Organization</p>
-                    <p className="text-sm text-gray-500">Issued: Month Year</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="py-20 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 relative">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-600 mb-4">
-                  Get In Touch
-                </h2>
-                <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-cyan-600 mx-auto rounded-full"></div>
-              </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/50">
-                <p className="text-center text-gray-600 mb-8 text-lg">
-                  I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
-                </p>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Contact Information</h3>
-                    <div className="space-y-3">
-                      <div className="flex items-center space-x-3">
-                        <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        <span className="text-gray-600">your.email@example.com</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        <span className="text-gray-600">+1 (555) 123-4567</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Send a Message</h3>
-                    <form className="space-y-4">
-                      <input
-                        type="text"
-                        placeholder="Your Name"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      />
-                      <input
-                        type="email"
-                        placeholder="Your Email"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      />
-                      <textarea
-                        placeholder="Your Message"
-                        rows={4}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
-                      ></textarea>
-                      <button
-                        type="submit"
-                        className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl font-semibold"
-                      >
-                        Send Message
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      
-      <Footer />
-    </div>
-  )
-}
-
-export default Home
+                    <h3 className="text-xl font-bold
